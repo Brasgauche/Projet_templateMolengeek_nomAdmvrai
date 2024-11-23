@@ -1,0 +1,16 @@
+{
+  "name": "projet_templatemolengeek_nom",
+  "version": "1.0.0",
+  "description": "Projet Molengeek avec Bootstrap et SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/style.sass:assets/css/style.css",
+    "start": "nodemon"
+  },
+  "author": "Ton Nom",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "sass": "^1.65.0"
+  }
+}
