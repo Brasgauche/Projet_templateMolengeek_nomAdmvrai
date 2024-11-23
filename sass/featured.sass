@@ -1,0 +1,32 @@
+// Fichier _featured.sass
+@import 'variables'
+
+.featured
+  background: $background-color
+  padding: 50px 0
+
+  h2
+    text-align: center
+    color: $text-color
+    margin-bottom: 30px
+
+  .cards
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 20px
+
+    .card
+      background: white
+      border-radius: 8px
+      padding: 20px
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+      text-align: center
+
+      i
+        font-size: 40px
+        color: $primary-color
+        margin-bottom: 10px
+
+      h3
+        font-size: 18px
+        margin-bottom: 10px

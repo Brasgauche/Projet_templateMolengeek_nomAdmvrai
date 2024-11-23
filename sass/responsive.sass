@@ -1,0 +1,35 @@
+// Fichier _responsive.sass
+@import 'variables'
+
+// Points de rupture pour les petits écrans
+@mixin responsive($breakpoint)
+  @if $breakpoint == "mobile"
+    @media (max-width: 576px)
+      @content
+  @else if $breakpoint == "tablet"
+    @media (max-width: 768px)
+      @content
+
+// Styles pour mobile
+@include responsive("mobile")
+  .header
+    padding: 50px 10px
+
+  .navbar .menu
+    flex-direction: column
+    gap: 10px
+
+  .cards
+    grid-template-columns: 1fr
+
+  .contact-info
+    flex-direction: column
+    gap: 20px
+
+// Styles pour tablette
+@include responsive("tablet")
+  .cards
+    grid-template-columns: 1fr 1fr
+  .members
+    flex-wrap: wrap
+    justify-content: center
