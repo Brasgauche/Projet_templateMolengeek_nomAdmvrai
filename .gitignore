@@ -1,0 +1,30 @@
+# Ignorer les fichiers générés par Node.js
+node_modules/
+package-lock.json
+
+# Ignorer les fichiers SASS temporaires
+*.sass-cache
+*.map
+
+# Ignorer les fichiers compilés en CSS depuis SASS
+scss/
+
+# Ignorer les fichiers spécifiques au système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Ignorer les clés SSH ou autres fichiers sensibles (au cas où)
+*.pem
+*.key
+
+# Ignorer les fichiers logs
+*.log
+
+# Ignorer tout fichier temporaire créé par l'utilisateur
+*.swp
+*.bak
+*.tmp
+
+# Ignorer les fichiers générés par l'environnement
+.idea/
+.vscode/
